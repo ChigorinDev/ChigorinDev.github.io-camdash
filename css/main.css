@@ -365,7 +365,8 @@ body {
   color: #434343;
   font-size: 14px;
   font-weight: 600;
-  font-style: normal; }
+  font-style: normal;
+  background: #e8e8e8; }
 
 .table-body td {
   font-size: 14px;
@@ -395,7 +396,7 @@ body {
   background: #03abf0; }
 
 .vehicle-head {
-  background-color: #f2f3f3;
+  background-color: #e8e8e8;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -431,12 +432,12 @@ body {
     font-weight: 500; }
 
 .driver-info {
-  margin-top: 1rem;
   text-align: center; }
   .driver-info .driver-name,
   .driver-info .driver-phone {
     display: block; }
   .driver-info .driver-name {
+    margin-top: 2rem;
     font-size: 18px;
     font-weight: 600;
     font-style: normal;
@@ -468,29 +469,32 @@ body {
   font-size: 14px; }
 
 @media only screen and (max-width: 993.3px) {
-  .driver-info {
-    margin-top: 4rem; }
+  .driver-info,
+  .vehicle-head {
+    margin-top: 1.5rem; }
   .table-footer__row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
 
 @media only screen and (max-width: 760px) {
+  .main-content-top {
+    margin-bottom: .5rem; }
   .tab-satus {
     width: 4.5rem;
     min-width: 2.5rem;
     padding: 0; }
     .tab-satus span {
       margin: 0;
-      display: none; } }
+      display: none; }
+  .pushContent .header {
+    padding-left: 14rem; } }
 
 @media only screen and (max-width: 600px) {
   .showLeftMenu {
     position: absolute; }
   .pushContent {
     padding-left: 0; }
-  .pushContent .header {
-    padding-left: 14rem; }
   .main-content {
     padding: 0 0.2rem; }
   .main-content-top .btn-custom, .main-content-top .btn-white {
@@ -500,9 +504,14 @@ body {
   .tab-body-block .name-info {
     font-size: 16px; }
   .tab-body-block div {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .buttons-container .btn-white {
+    width: 12rem !important;
+    min-width: 12rem !important; } }
 
 @media only screen and (max-width: 420px) {
+  .tab-heading {
+    font-size: 1.5rem; }
   .tab-satus {
     background: url(../img/icons/icon-circle-white.svg) no-repeat center/1.5rem, -webkit-gradient(linear, left top, left bottom, color-stop(1%, #02d420), to(#02d420));
     background: url(../img/icons/icon-circle-white.svg) no-repeat center/1.5rem, linear-gradient(#02d420 1%, #02d420 100%); }

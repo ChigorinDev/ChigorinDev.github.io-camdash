@@ -498,6 +498,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
+    background: $light-grey;
   }
 }
 
@@ -541,7 +542,7 @@ body {
 }
 
 .vehicle-head {
-  background-color: $lightest-grey;
+  background-color: $light-grey;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -587,7 +588,6 @@ body {
 }
 
 .driver-info {
-  margin-top: 1rem;
   text-align: center;
 
   .driver-name,
@@ -596,6 +596,7 @@ body {
   }
 
   .driver-name {
+    margin-top: 2rem;
     font-size: 18px;
     font-weight: 600;
     font-style: normal;
@@ -646,8 +647,10 @@ body {
 //meadia
 
 @media only screen and (max-width: 993.3px) {
-  .driver-info {
-    margin-top: 4rem;
+
+  .driver-info,
+  .vehicle-head {
+    margin-top: 1.5rem;
   }
 
   .table-footer__row {
@@ -655,9 +658,14 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+
 }
 
 @media only screen and (max-width: 760px) {
+  .main-content-top {
+    margin-bottom: .5rem;
+  }
+
   .tab-satus {
     width: 4.5rem;
     min-width: 2.5rem;
@@ -668,19 +676,22 @@ body {
       display: none;
     }
   }
+
+  .pushContent .header {
+    padding-left: 14rem;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
+
+
   .showLeftMenu {
     position: absolute;
   }
 
   .pushContent {
     padding-left: 0;
-  }
-
-  .pushContent .header {
-    padding-left: 14rem;
   }
 
   .main-content {
@@ -700,9 +711,19 @@ body {
   .tab-body-block div {
     font-size: 14px;
   }
+
+  .buttons-container .btn-white {
+    width: 12rem !important;
+    min-width: 12rem !important;
+  }
 }
 
 @media only screen and (max-width: 420px) {
+
+  .tab-heading {
+    font-size: 1.5rem;
+  }
+
   .tab-satus {
     background: url(../img/icons/icon-circle-white.svg) no-repeat center / 1.5rem,
       -webkit-gradient(linear, left top, left bottom, color-stop(1%, #02d420), to(#02d420));
