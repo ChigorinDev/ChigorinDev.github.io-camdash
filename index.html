@@ -90,399 +90,431 @@
       <div class="container-fluid main-content">
         <!-- -------------------  Order history ----------------------->
         <div class="row m-top-md main-content-top">
-          <div class="col s9">
+          <div class="col s12 m8 l9">
             <h4 class="heading">Итория заказов</h4>
           </div>
-          <div class="col s3">
+          <div class="col s12 m4 l3">
             <button class=" right waves-effect waves-light btn z-depth-1 btn-custom">
               Подать заявку
             </button>
           </div>
         </div>
         <div class="row main-content-mid">
+
           <div class="col s12">
-            <!-- -------------------  Tabs  #1----------------------->
-            <div class="tab-heading">ЖД</div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header tab-header">
-                  <div class="tab-header-left">
-                    <div class="tab-satus valign-wrapper">
-                      <span>Огружено</span>
-                    </div>
-                    <span class="tab-info">Заказ №12345678 от 24.05.2019</span>
-                    <span class="tab-info">Доставка</span>
-                    <span class="tab-info">Валюта договора: RUB</span>
-                  </div>
-                  <div class="tab-header-right">
-                    <button class="btn btn-white">
-                      <i class="i-box icon-refresh"></i> Подать заявку
-                    </button>
-                    <span class="tab-info data-icon">дата отгрузки: 03.05.2018</span>
-                    <a class="btn-floating  waves-effect waves-light btn-small tab-trigger"><i
-                        class="icon-arrow"></i></a>
-                  </div>
-                </div>
-                <div class="collapsible-body">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col s6">
-                        <!-- ------------------- Customer block ----------------------->
-                        <div class="tab-body-block">
-                          <div>Покупатель:</div>
-                          <span class="name-info">OOO "Транс Альянс"</span>
-                          <div>
-                            Грузополучатель:
-                            <span class="grey-info">OOO "Самарский Лес"</span>
-                          </div>
-                          <div>
-                            Грузоотправитель:
-                            <span class="grey-info">OOO "ТаргСнаб"</span>
-                          </div>
-                        </div>
-                        <!-- ------------------- Customer block end ----------------------->
+            <!-- -------------------  Жд ----------------------->
+            <section class="train-section">
+              <div class="tab-heading">ЖД</div>
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header tab-header">
+                    <div class="tab-header-left">
+                      <div class="tab-satus valign-wrapper">
+                        <span>Огружено</span>
                       </div>
-                      <div class="col s6">
-                        <!-- ------------------- Seller block ----------------------->
-                        <div class="tab-body-block">
-                          <div>Продавец:</div>
-                          <span class="name-info">ООО «Машина Каталка»</span>
-                          <div>
-                            Адрес доставки:
-                            <span class="grey-info">Россия, г. Самара, ул. Ленина 666</span>
-                          </div>
-                          <div>
-                            Адрес отгрузки:
-                            <span class="grey-info">Вестеррос, г. Королевская Гавань, ул. Бэйлора
-                              Строителя, 13</span>
-                          </div>
-                        </div>
-                        <!-- ------------------- Seller block  end----------------------->
-                      </div>
+                      <div class="tab-info">Заказ №12345678 от 24.05.2019</div>
+                      <div class="tab-info hide-on-med-and-down">Доставка</div>
+                      <div class="tab-info hide-on-med-and-down">Валюта договора:<span class="currency">RUB</span></div>
                     </div>
-                    <!-- -------------------  Table  #1----------------------->
-                    <div class="row">
-                      <div class="col s12">
-                        <div class="table-heading">Название товара</div>
-                        <table class="highlight centered responsive-table">
-                          <thead class="table-top">
-                            <tr>
-                              <th>Марка</th>
-                              <th>Количество</th>
-                              <th>Единиза измерения</th>
-                              <th>Цена</th>
-                              <th>Вид упаковки</th>
-                              <th>Количество мест</th>
-                              <th>Сумма НДС</th>
-                              <th>НДС</th>
-                            </tr>
-                          </thead>
+                    <div class="tab-header-right">
+                      <button class="btn btn-white hide-on-med-and-down">
+                        <i class="i-box icon-refresh"></i> Подать заявку
+                      </button>
+                      <span class="tab-info data-icon hide-on-small-only">дата отгрузки: 03.05.2018</span>
+                      <a class="btn-floating  waves-effect waves-light btn-small tab-trigger"><i
+                          class="icon-arrow"></i></a>
+                    </div>
+                  </div>
+                  <div class="collapsible-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col s12 m6">
+                          <!-- ------------------- Блок Покупателя----------------------->
+                          <div class="tab-body-block">
+                            <div class="customer">Покупатель:</div>
+                            <span class="name-info">OOO "Транс Альянс"</span>
+                            <div>
+                              Грузополучатель:
+                              <span class="grey-info">OOO "Самарский Лес"</span>
+                            </div>
+                            <div>
+                              Адрес доставки:
+                              <span class="grey-info">Россия, г. Самара, ул. Ленина 666</span>
+                            </div>
+                          </div>
+                          <!-------------------------------------------->
 
-                          <tbody class="table-body">
-                            <tr>
-                              <td>Марка1</td>
-                              <td>5</td>
-                              <td>т</td>
-                              <td>1000</td>
-                              <td>6000</td>
-                              <td>20</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                            <tr>
-                              <td>Марка1</td>
-                              <td>5</td>
-                              <td>т</td>
-                              <td>1000</td>
-                              <td>6000</td>
-                              <td>20</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                            <tr>
-                              <td>Марка1</td>
-                              <td>5</td>
-                              <td>т</td>
-                              <td>1000</td>
-                              <td>6000</td>
-                              <td>20</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                            <tr>
-                              <td>Марка1</td>
-                              <td>5</td>
-                              <td>т</td>
-                              <td>1000</td>
-                              <td>6000</td>
-                              <td>20</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                            <tr>
-                              <td>Марка1</td>
-                              <td>5</td>
-                              <td>т</td>
-                              <td>1000</td>
-                              <td>6000</td>
-                              <td>20</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                          </tbody>
-                          <tfoot class="table-footer">
-                            <tr>
-                              <td colspan="5"></td>
-                              <td>Итого:</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                          </tfoot>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col s12">
-                        <div class="buttons-container">
-                          <button class="btn btn-white">
-                            <i class="i-box icon-print"></i> Распечатать чек
-                          </button>
-                          <button class="btn btn-white">
-                            <i class="i-box icon-sheet"></i> Заказать УПД
-                          </button>
-                          <button class="btn btn-white">
-                            <i class="i-box icon-msg"></i> Подать запрос
-                          </button>
-                          <button class="btn btn-white">
-                            <i class="i-box icon-refresh"></i> Повторить
-                          </button>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                        <div class="col s12 m6">
+                          <!-- ------------------- Блок отправителя ----------------------->
+                          <div class="tab-body-block">
+                            <div class="seller">Продавец:</div>
+                            <span class="name-info">ООО «Машина Каталка»</span>
+                            <div>
+                              Грузоотправитель:
+                              <span class="grey-info">OOO "ТаргСнаб"</span>
+                            </div>
+                            <div>
+                              Адрес отгрузки:
+                              <span class="grey-info">Вестеррос, г. Королевская Гавань, ул. Бэйлора
+                                Строителя, 13</span>
+                            </div>
+                          </div>
+                          <!-------------------------------------------->
 
-            <!-- -------------------  Tabs  #2----------------------->
-            <div class="tab-heading">Авто</div>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header tab-header">
-                  <div class="tab-header-left">
-                    <div class="tab-satus valign-wrapper">
-                      <span>Огружено</span>
-                    </div>
-                    <span class="tab-info">Заказ №12345678 от 24.05.2019</span>
-                    <span class="tab-info">Доставка</span>
-                    <span class="tab-info">Валюта договора: RUB</span>
-                  </div>
-                  <div class="tab-header-right">
-                    <button class="btn btn-white">
-                      <i class="i-box icon-refresh"></i> Подать заявку
-                    </button>
-                    <span class="tab-info data-icon">дата отгрузки: 03.05.2018</span>
-                    <a class="btn-floating  waves-effect waves-light btn-small tab-trigger"><i
-                        class="icon-arrow"></i></a>
-                  </div>
-                </div>
-                <div class="collapsible-body">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col s6">
-                        <!-- ------------------- Customer block ----------------------->
-                        <div class="tab-body-block">
-                          <div>Покупатель:</div>
-                          <span class="name-info">OOO "Транс Альянс"</span>
-                          <div>
-                            Грузополучатель:
-                            <span class="grey-info">OOO "Самарский Лес"</span>
-                          </div>
-                          <div>
-                            Грузоотправитель:
-                            <span class="grey-info">OOO "ТаргСнаб"</span>
-                          </div>
                         </div>
-                        <!-- ------------------- Customer block end ----------------------->
                       </div>
-                      <div class="col s6">
-                        <!-- ------------------- Seller block ----------------------->
-                        <div class="tab-body-block">
-                          <div>Продавец:</div>
-                          <span class="name-info">ООО «Машина Каталка»</span>
-                          <div>
-                            Адрес доставки:
-                            <span class="grey-info">Россия, г. Самара, ул. Ленина 666</span>
-                          </div>
-                          <div>
-                            Адрес отгрузки:
-                            <span class="grey-info">Вестеррос, г. Королевская Гавань, ул. Бэйлора
-                              Строителя, 13</span>
-                          </div>
-                        </div>
-                        <!-- ------------------- Seller block  end----------------------->
-                      </div>
-                    </div>
-                    <!-- -------------------  Table  #1----------------------->
-                    <div class="row">
-                      <div class="col s12">
-                        <div class="table-heading">Название товара</div>
-                        <table class="highlight centered responsive-table">
-                          <thead class="table-top">
-                            <tr>
-                              <th>Марка</th>
-                              <th>Количество</th>
-                              <th>Единиза измерения</th>
-                              <th>Цена</th>
-                              <th>Вид упаковки</th>
-                              <th>Количество мест</th>
-                              <th>Сумма НДС</th>
-                              <th>НДС</th>
-                            </tr>
-                          </thead>
+                      <!---------------------  Таблица (жд)----------------------->
+                      <div class="row">
+                        <div class="col s12">
+                          <div class="table-heading">Название товара</div>
+                          <table class="highlight centered responsive-table">
+                            <thead class="table-top">
+                              <tr>
+                                <th>Марка</th>
+                                <th>Количество</th>
+                                <th>Ед. измерения</th>
+                                <th>Цена</th>
+                                <th>Вид упаковки</th>
+                                <th>Количество мест</th>
+                                <th>Сумма НДС</th>
+                                <th>НДС</th>
+                              </tr>
+                            </thead>
 
-                          <tbody class="table-body">
-                            <tr>
-                              <td>Марка1</td>
-                              <td>5</td>
-                              <td>т</td>
-                              <td>1000</td>
-                              <td>6000</td>
-                              <td>20</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                            <tr>
-                              <td>Марка1</td>
-                              <td>5</td>
-                              <td>т</td>
-                              <td>1000</td>
-                              <td>6000</td>
-                              <td>20</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                            <tr>
-                              <td>Марка1</td>
-                              <td>5</td>
-                              <td>т</td>
-                              <td>1000</td>
-                              <td>6000</td>
-                              <td>20</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                            <tr>
-                              <td>Марка1</td>
-                              <td>5</td>
-                              <td>т</td>
-                              <td>1000</td>
-                              <td>6000</td>
-                              <td>20</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                            <tr>
-                              <td>Марка1</td>
-                              <td>5</td>
-                              <td>т</td>
-                              <td>1000</td>
-                              <td>6000</td>
-                              <td>20</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                          </tbody>
-                          <tfoot class="table-footer">
-                            <tr>
-                              <td colspan="5"></td>
-                              <td>Итого:</td>
-                              <td>200 000</td>
-                              <td>10 000</td>
-                            </tr>
-                          </tfoot>
-                        </table>
+                            <tbody class="table-body">
+                              <tr>
+                                <td>Марка1</td>
+                                <td>5</td>
+                                <td>т</td>
+                                <td>1000</td>
+                                <td>6000</td>
+                                <td>20</td>
+                                <td>200 000</td>
+                                <td>10 000</td>
+                              </tr>
+                              <tr>
+                                <td>Марка1</td>
+                                <td>5</td>
+                                <td>т</td>
+                                <td>1000</td>
+                                <td>6000</td>
+                                <td>20</td>
+                                <td>200 000</td>
+                                <td>10 000</td>
+                              </tr>
+                              <tr>
+                                <td>Марка1</td>
+                                <td>5</td>
+                                <td>т</td>
+                                <td>1000</td>
+                                <td>6000</td>
+                                <td>20</td>
+                                <td>200 000</td>
+                                <td>10 000</td>
+                              </tr>
+                              <tr>
+                                <td>Марка1</td>
+                                <td>5</td>
+                                <td>т</td>
+                                <td>1000</td>
+                                <td>6000</td>
+                                <td>20</td>
+                                <td>200 000</td>
+                                <td>10 000</td>
+                              </tr>
+                              <tr>
+                                <td>Марка1</td>
+                                <td>5</td>
+                                <td>т</td>
+                                <td>1000</td>
+                                <td>6000</td>
+                                <td>20</td>
+                                <td>200 000</td>
+                                <td>10 000</td>
+                              </tr>
+                            </tbody>
+                            <tfoot class="table-footer">
+                              <tr class="table-footer__row">
+                                <td colspan="5 hide-on-med-and-down"></td>
+                                <td class="hide-on-med-and-down">Итого:</td>
+                                <td> <span class="show-on-medium-and-down">Сумма НДС:</span> 200 000</td>
+                                <td> <span class="show-on-medium-and-down">НДС:</span>10 000</td>
+                              </tr>
+                            </tfoot>
+                          </table>
+                        </div>
                       </div>
-                    </div>
-                    <div class="row table-vehicle">
-                      <div class="col s12">
-                        <div class="row">
-                          <div class="col s4">
-                            <div class="vehicle-head">Машина</div>
+
+                      <!---------------------  Детальная иформация (жд) ----------------------->
+                      <div class="row table-vehicle train-block">
+
+                        <div class="col s12 m7">
+                          <div class="vehicle-part">
+                            <div class="vehicle-info">
+                              <span class="info-left">Номер заявки ГУ-12:</span>
+                              <span class="info-right">12.400.186УД</span>
+                            </div>
+
                           </div>
-                          <div class="col s4">
-                            <div class="vehicle-head">Прицеп</div>
-                          </div>
-                          <div class="col s4">
-                            <div class="vehicle-head">Водитель</div>
+                        </div>
+
+                      </div>
+
+                      <!---------------------  Кнопки с услугами ----------------------->
+                      <div class="row">
+                        <div class="col s12">
+                          <div class="buttons-container">
+                            <button class="btn btn-white">
+                              <i class="i-box icon-print"></i> Распечатать чек
+                            </button>
+                            <button class="btn btn-white">
+                              <i class="i-box icon-sheet"></i> Заказать УПД
+                            </button>
+                            <button class="btn btn-white">
+                              <i class="i-box icon-msg"></i> Подать запрос
+                            </button>
+                            <button class="btn btn-white">
+                              <i class="i-box icon-refresh"></i> Повторить
+                            </button>
                           </div>
                         </div>
                       </div>
-                      <div class="col s4">
-                        <div class="vehicle-part">
-                          <div class="vehicle-info">
-                            <span class="info-left">Гос.номер:</span>
-                            <span class="info-right">а256вы</span>
-                          </div>
-                          <div class="vehicle-info">
-                            <span class="info-left">Количество осей:</span>
-                            <span class="info-right">2</span>
-                          </div>
-                          <div class="vehicle-info">
-                            <span class="info-left">Масса:</span>
-                            <span class="info-right">2000 т</span>
-                          </div>
-                          <div class="vehicle-info">
-                            <span class="info-left">Марка:</span>
-                            <span class="info-right">Мерседес</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col s4">
-                        <div class="vehicle-part">
-                          <div class="vehicle-info">
-                            <span class="info-left">Гос.номер:</span>
-                            <span class="info-right">в684тр</span>
-                          </div>
-                          <div class="vehicle-info">
-                            <span class="info-left">Количество осей:</span>
-                            <span class="info-right">3</span>
-                          </div>
-                          <div class="vehicle-info">
-                            <span class="info-left">Масса:</span>
-                            <span class="info-right">3</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col s4">
-                        <div class="driver-info">
-                          <span class="driver-name">Иванов Иван Иванович</span>
-                          <a href="#" class="driver-phone">+7 928-455-74-36</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col s12">
-                        <div class="buttons-container">
-                          <button class="btn btn-white">
-                            <i class="i-box icon-print"></i> Распечатать чек
-                          </button>
-                          <button class="btn btn-white">
-                            <i class="i-box icon-sheet"></i> Заказать УПД
-                          </button>
-                          <button class="btn btn-white">
-                            <i class="i-box icon-msg"></i> Подать запрос
-                          </button>
-                          <button class="btn btn-white">
-                            <i class="i-box icon-refresh"></i> Повторить
-                          </button>
-                        </div>
-                      </div>
+
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </section>
+            <!-- -------------------  Авто ----------------------->
+            <section class="auto-section">
+              <div class="tab-heading">Авто</div>
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header tab-header">
+                    <div class="tab-header-left">
+                      <div class="tab-satus valign-wrapper">
+                        <span>Огружено</span>
+                      </div>
+                      <span class="tab-info">Заказ №12345678 от 24.05.2019</span>
+                      <span class="tab-info hide-on-med-and-down">Доставка</span>
+                      <div class="tab-info hide-on-med-and-down">Валюта договора:<span class="currency">RUB</span></div>
+                    </div>
+                    <div class="tab-header-right">
+                      <button class="btn btn-white hide-on-med-and-down">
+                        <i class="i-box icon-refresh"></i> Подать заявку
+                      </button>
+                      <span class="tab-info data-icon hide-on-small-only">дата отгрузки: 03.05.2018</span>
+                      <a class="btn-floating  waves-effect waves-light btn-small tab-trigger"><i
+                          class="icon-arrow"></i></a>
+                    </div>
+                  </div>
+                  <div class="collapsible-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col s12 m6">
+                          <!-- ------------------- Блок покупателя ----------------------->
+                          <div class="tab-body-block">
+                            <div class="customer">Покупатель:</div>
+                            <span class="name-info">OOO "Транс Альянс"</span>
+                            <div>
+                              Грузополучатель:
+                              <span class="grey-info">OOO "Самарский Лес"</span>
+                            </div>
+                            <div>
+                              Грузоотправитель:
+                              <span class="grey-info">OOO "ТаргСнаб"</span>
+                            </div>
+                          </div>
+                          <!-- ------------------- ----------------------->
+                        </div>
+
+                        <div class="col s12 m6">
+                          <!-- ------------------- Блок отправителя ----------------------->
+                          <div class="tab-body-block">
+                            <div class="seller">Продавец:</div>
+                            <span class="name-info">ООО «Машина Каталка»</span>
+                            <div>
+                              Адрес доставки:
+                              <span class="grey-info">Россия, г. Самара, ул. Ленина 666</span>
+                            </div>
+                            <div>
+                              Адрес отгрузки:
+                              <span class="grey-info">Вестеррос, г. Королевская Гавань, ул. Бэйлора
+                                Строителя, 13</span>
+                            </div>
+                          </div>
+                          <!-------------------------------------------->
+                        </div>
+                      </div>
+
+                      <!-- -------------------  Таблица (авто)----------------------->
+                      <div class="row">
+                        <div class="col s12">
+                          <div class="table-heading">Название товара</div>
+                          <table class="highlight centered responsive-table">
+                            <thead class="table-top">
+                              <tr>
+                                <th>Марка</th>
+                                <th>Количество</th>
+                                <th>Ед. измерения</th>
+                                <th>Цена</th>
+                                <th>Вид упаковки</th>
+                                <th>Количество мест</th>
+                                <th>Сумма НДС</th>
+                                <th>НДС</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-body">
+                              <tr>
+                                <td>Марка1</td>
+                                <td>5</td>
+                                <td>т</td>
+                                <td>1000</td>
+                                <td>6000</td>
+                                <td>20</td>
+                                <td>200 000</td>
+                                <td>10 000</td>
+                              </tr>
+                              <tr>
+                                <td>Марка1</td>
+                                <td>5</td>
+                                <td>т</td>
+                                <td>1000</td>
+                                <td>6000</td>
+                                <td>20</td>
+                                <td>200 000</td>
+                                <td>10 000</td>
+                              </tr>
+                              <tr>
+                                <td>Марка1</td>
+                                <td>5</td>
+                                <td>т</td>
+                                <td>1000</td>
+                                <td>6000</td>
+                                <td>20</td>
+                                <td>200 000</td>
+                                <td>10 000</td>
+                              </tr>
+                              <tr>
+                                <td>Марка1</td>
+                                <td>5</td>
+                                <td>т</td>
+                                <td>1000</td>
+                                <td>6000</td>
+                                <td>20</td>
+                                <td>200 000</td>
+                                <td>10 000</td>
+                              </tr>
+                              <tr>
+                                <td>Марка1</td>
+                                <td>5</td>
+                                <td>т</td>
+                                <td>1000</td>
+                                <td>6000</td>
+                                <td>20</td>
+                                <td>200 000</td>
+                                <td>10 000</td>
+                              </tr>
+                            </tbody>
+                            <tfoot class="table-footer">
+                              <tr class="table-footer__row">
+                                <td colspan="5 hide-on-med-and-down"></td>
+                                <td class="hide-on-med-and-down">Итого:</td>
+                                <td> <span class="show-on-medium-and-down">Сумма НДС:</span> 200 000</td>
+                                <td> <span class="show-on-medium-and-down">НДС:</span>10 000</td>
+                              </tr>
+                            </tfoot>
+                          </table>
+                        </div>
+                      </div>
+
+                      <!---------------------  Детальная иформация (авто) ----------------------->
+                      <div class="row table-vehicle">
+                        <div class="col s12">
+                          <div class="row">
+                            <div class="col s6 m6 l4">
+                              <div class="vehicle-head">Машина</div>
+                            </div>
+                            <div class="col s6 m6 l4">
+                              <div class="vehicle-head">Прицеп</div>
+                            </div>
+                            <div class="col s4 hide-on-med-and-down">
+                              <div class="vehicle-head">Водитель</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col s6 m6 l4">
+                          <div class="vehicle-part">
+                            <div class="vehicle-info">
+                              <span class="info-left">Гос.номер:</span>
+                              <span class="info-right">а256вы</span>
+                            </div>
+                            <div class="vehicle-info">
+                              <span class="info-left">Количество осей:</span>
+                              <span class="info-right">2</span>
+                            </div>
+                            <div class="vehicle-info">
+                              <span class="info-left">Масса:</span>
+                              <span class="info-right">2000 т</span>
+                            </div>
+                            <div class="vehicle-info">
+                              <span class="info-left">Марка:</span>
+                              <span class="info-right">Мерседес</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col s6 m6 l4">
+                          <div class="vehicle-part">
+                            <div class="vehicle-info">
+                              <span class="info-left">Гос.номер:</span>
+                              <span class="info-right">в684тр</span>
+                            </div>
+                            <div class="vehicle-info">
+                              <span class="info-left">Количество осей:</span>
+                              <span class="info-right">3</span>
+                            </div>
+                            <div class="vehicle-info">
+                              <span class="info-left">Масса:</span>
+                              <span class="info-right">3</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col m12 l4 ">
+                          <div class="driver-info">
+                            <span class="driver-name">Иванов Иван Иванович</span>
+                            <a href="#" class="driver-phone">+7 928-455-74-36</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--------------------- Кнопки с услугами ----------------------->
+                      <div class="row">
+                        <div class="col s12">
+                          <div class="buttons-container">
+                            <button class="btn btn-white">
+                              <i class="i-box icon-print"></i> Распечатать чек
+                            </button>
+                            <button class="btn btn-white">
+                              <i class="i-box icon-sheet"></i> Заказать УПД
+                            </button>
+                            <button class="btn btn-white">
+                              <i class="i-box icon-msg"></i> Подать запрос
+                            </button>
+                            <button class="btn btn-white">
+                              <i class="i-box icon-refresh"></i> Повторить
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+ 
+
           </div>
         </div>
       </div>
@@ -517,7 +549,7 @@
 
       $(".tab-trigger").click(function () {
         $(".collapsible").collapsible();
-        $(".tab-header-right .btn-white").toggleClass("hide");
+        // $(".tab-header-right .btn-white").toggleClass("hide");
       });
       $(".tab-trigger").click(function () {
         $(this).toggleClass("tab-trigger__active");
